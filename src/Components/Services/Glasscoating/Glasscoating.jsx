@@ -120,8 +120,8 @@ const Glasscoating = () => {
 
       </ul>
       <div className="ppf-button-container">
-        <button className="book-btn">📅 Book Your Appointment Now</button>
-      </div>
+  <a href="/appointment" className="book-btn">📅 Book Your Appointment Now</a>
+</div>
 
       <h2 className="ppf-subheading">Gallery: Our Glass-Coat Work</h2>
       <div className="ppf-gallery">
@@ -134,8 +134,8 @@ const Glasscoating = () => {
 
       <h2 className="ppf-subheading">"100% Trustworthy, Every Time – Quality You Can Rely On!"</h2>
       <div className="ppf-button-container">
-        <button className="book-btn">📅 Book Your Appointment Now</button>
-      </div>
+  <a href="/appointment" className="book-btn">📅 Book Your Appointment Now</a>
+</div>
     </div>
   );
 };

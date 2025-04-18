@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./ppf.css";
 import { assets } from '@assets/icon';
+import { Link } from "react-router-dom";
 
 const PPF = () => {
   useEffect(() => {
@@ -143,8 +144,16 @@ const PPF = () => {
 
       </ul>
       <div className="ppf-button-container">
-        <button className="book-btn">📅 Book Your Appointment Now</button>
-      </div>
+  <a 
+    href="/appointment" 
+    className="book-btn" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    📅 Book Your Appointment Now
+  </a>
+</div>
+
 
       <h2 className="ppf-subheading">Gallery: Our PPF Work</h2>
       <div className="ppf-gallery">
@@ -157,8 +166,15 @@ const PPF = () => {
 
       <h2 className="ppf-subheading">"100% Trustworthy, Every Time – Quality You Can Rely On!"</h2>
       <div className="ppf-button-container">
-        <button className="book-btn">📅 Book Your Appointment Now</button>
-      </div>
+  <a 
+    href="/appointment" 
+    className="book-btn" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    📅 Book Your Appointment Now
+  </a>
+</div>
     </div>
   );
 };
