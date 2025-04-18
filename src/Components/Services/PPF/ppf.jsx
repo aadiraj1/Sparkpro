@@ -3,17 +3,6 @@ import "./ppf.css";
 import { assets } from '@assets/icon';
 import { Link } from "react-router-dom"; 
 
-<div className="ppf-button-container">
-  <Link 
-    to="/appointment" 
-    className="book-btn"
-    onClick={handleNavLinkClick}
-  >
-    📅 Book Your Appointment Now
-  </Link>
-</div>
-
-
 const PPF = () => {
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
@@ -154,15 +143,10 @@ const PPF = () => {
 
 
       </ul>
-<div className="ppf-button-container">
-  <Link 
-    to="/appointment" 
-    className="book-btn"
-    onClick={handleNavLinkClick}
-  >
-    📅 Book Your Appointment Now
-  </Link>
+      <div className="ppf-button-container">
+  <Link to="/appointment" className="book-btn">📅 Book Your Appointment Now</Link>
 </div>
+
 
       <h2 className="ppf-subheading">Gallery: Our PPF Work</h2>
       <div className="ppf-gallery">
@@ -175,8 +159,9 @@ const PPF = () => {
 
       <h2 className="ppf-subheading">"100% Trustworthy, Every Time – Quality You Can Rely On!"</h2>
       <div className="ppf-button-container">
-        <button className="book-btn">📅 Book Your Appointment Now</button>
-      </div>
+  <Link to="/appointment" className="book-btn">📅 Book Your Appointment Now</Link>
+</div>
+
     </div>
   );
 };
