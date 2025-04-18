@@ -1,6 +1,18 @@
 import React, { useEffect } from "react";
 import "./ppf.css";
 import { assets } from '@assets/icon';
+import { Link } from "react-router-dom"; 
+
+<div className="ppf-button-container">
+  <Link 
+    to="/appointment" 
+    className="book-btn"
+    onClick={handleNavLinkClick}
+  >
+    📅 Book Your Appointment Now
+  </Link>
+</div>
+
 
 const PPF = () => {
   useEffect(() => {
@@ -142,15 +154,14 @@ const PPF = () => {
 
 
       </ul>
-        <div className="ppf-button-container">
-  <a 
-    href="/appointment" 
-    className="book-btn" 
-    target="_blank" 
-    rel="noopener noreferrer"
+<div className="ppf-button-container">
+  <Link 
+    to="/appointment" 
+    className="book-btn"
+    onClick={handleNavLinkClick}
   >
     📅 Book Your Appointment Now
-  </a>
+  </Link>
 </div>
 
       <h2 className="ppf-subheading">Gallery: Our PPF Work</h2>
