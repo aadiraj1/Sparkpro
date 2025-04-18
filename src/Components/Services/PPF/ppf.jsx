@@ -142,9 +142,16 @@ const PPF = () => {
 
 
       </ul>
-      <div className="ppf-button-container">
-        <button className="book-btn">📅 Book Your Appointment Now</button>
-      </div>
+        <div className="ppf-button-container">
+  <a 
+    href="/appointment" 
+    className="book-btn" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    📅 Book Your Appointment Now
+  </a>
+</div>
 
       <h2 className="ppf-subheading">Gallery: Our PPF Work</h2>
       <div className="ppf-gallery">
