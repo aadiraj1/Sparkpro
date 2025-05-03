@@ -114,7 +114,7 @@ const Hero = () => {
           <img className="chrome-img-hero" src={assets.tint_icon} alt="Description f image"/>
           <p>
           Solar tinting is a popular window treatment for cars that involves applying a special film to the vehicle’s windows, including the front and rear glass. This film is designed to reduce the amount of heat, UV rays, and glare entering the vehicle, providing a more comfortable driving experience. Solar tinting helps keep the interior cooler by blocking out a significant portion of solar heat, reducing the need for air conditioning. Additionally, it protects the car’s upholstery and interior from UV damage, which can cause fading and deterioration over time. The tint also enhances privacy and adds a sleek, stylish look to the car’s exterior.          </p>
-          <Link className="Link-for-Go" to="/services/ppf">
+          <Link className="Link-for-Go" to="/appointment">
   <h2 className="click-fro-ppg-section">Click here for Glass Coating services</h2>
 </Link>
         </div>
