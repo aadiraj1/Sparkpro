@@ -1,54 +1,85 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom"; 
+import { Helmet } from 'react-helmet';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        
-        <div className="footer-section brand">
-          <h2>SparkproDetails</h2>
-        
-        </div>
+    <>
+      <Helmet>
+        <meta name="description" content="SparkproDetails - Your trusted source for car detailing services. Book an appointment and experience the best services for your vehicle." />
+        <title>SparkproDetails | Car Detailing Services</title>
+      </Helmet>
 
-        <div className="footer-section links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/appointment">Appointment</a></li>
-          </ul>
-        </div>
-
-        <div className="footer-section contact">
-          <h4>Contact</h4>
-          <p>Email: support@mywebsite.com</p>
-          <p>Phone: +92 (310) 5555-027</p>
-        </div>
-
-        <div className="footer-section social">
-          <h4>Follow Us</h4>
-          <div className="social-icons">
-          <a href="https://www.instagram.com/sparkpro.details/" target="_blank" rel="noopener noreferrer" className="social-icon instagram">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61556978987668" target="_blank" rel="noopener noreferrer" className="social-icon facebook">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61573928611105" target="_blank" rel="noopener noreferrer" className="social-icon facebook">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.youtube.com/@Sparkprodetails/shorts" target="_blank" rel="noopener noreferrer" className="social-icon youtube">
-              <i className="fab fa-youtube"></i>
-            </a>
+      <footer className="footer">
+        <div className="footer-container">
+          
+          <div className="footer-section brand">
+            <h2>SparkproDetails</h2>
           </div>
+
+          <div className="footer-section links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><Link to="/appointment">Appointment</Link></li>
+            </ul>
+          </div>
+
+          <div className="footer-section contact">
+            <h4>Contact us</h4>
+            <p><a href="tel:+923105555027">Phone: +92 (310) 5555-027</a></p>
+          </div>
+
+          <div className="footer-section social">
+            <h4>Follow Us</h4>
+            <div className="social-icons">
+              <a
+                href="https://www.instagram.com/sparkpro.details/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon instagram"
+                aria-label="Instagram"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61556978987668"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon facebook"
+                aria-label="Facebook Page 1"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61573928611105"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon facebook"
+                aria-label="Facebook Page 2"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@Sparkprodetails/shorts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon youtube"
+                aria-label="YouTube Shorts"
+              >
+                <i className="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
         </div>
 
-      </div>
-
-      <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Sparkpro. All rights reserved.</p>
-      </div>
-    </footer>
+        <div className="footer-bottom">
+          <p>&copy; {new Date().getFullYear()} Sparkpro. All rights reserved.</p>
+        </div>
+      </footer>
+    </>
   );
 };
 
