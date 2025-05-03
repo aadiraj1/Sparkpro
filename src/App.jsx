@@ -3,15 +3,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import "./index.css"; // Global styles
 import Hero from "./Components/Hero/Hero";
-import PPF from "./Components/Services/PPF/PPF"; // Import the PPF component
+import PPF from "./Components/Services/PPF/PPF";
 import Cermaiccoating from "./Components/Services/Cermaiccoating/Cermaiccoating";
 import Glasscoating from "./Components/Services/Glasscoating/Glasscoating";
 import Cardetailing from "./Components/Services/Cardetailing/Cardetailing";
 import Dechrome from "./Components/Services/Dechrome/Dechrome";
 import Appointment from "./Components/Appointment/Appointment";
-import Footer from "./Components/Footer/Footer"; 
+import Footer from "./Components/Footer/Footer";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
 
 function App() {
   return (
@@ -19,15 +18,14 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Hero />} /> {/* Add a route for the root path */}
+          <Route path="/" element={<Hero />} />
           <Route path="/services/ppf" element={<PPF />} />
           <Route path="/services/ceramic-coating" element={<Cermaiccoating />} />
           <Route path="/services/glass-coating" element={<Glasscoating />} />
           <Route path="/services/detailing" element={<Cardetailing />} />
-          <Route path="/services/chromic-rims" element={<Dechrome />} />   
-          <Route path="/appointment" element={<Appointment />} /> 
+          <Route path="/services/chromic-rims" element={<Dechrome />} />
+          <Route path="/appointment" element={<Appointment />} />
         </Routes>
-        {/* Footer is included after all routes so it will show on every page */}
         <Footer />
       </div>
     </Router>

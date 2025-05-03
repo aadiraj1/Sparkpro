@@ -1,12 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom"; 
-import { Helmet } from 'react-helmet'; // Import Helmet for meta tag management
+import { Helmet } from 'react-helmet';
 
 const Footer = () => {
   return (
     <>
-      {/* Meta description for the footer page */}
       <Helmet>
         <meta name="description" content="SparkproDetails - Your trusted source for car detailing services. Book an appointment and experience the best services for your vehicle." />
         <title>SparkproDetails | Car Detailing Services</title>
@@ -17,7 +16,6 @@ const Footer = () => {
           
           <div className="footer-section brand">
             <h2>SparkproDetails</h2>
-          
           </div>
 
           <div className="footer-section links">
@@ -26,7 +24,6 @@ const Footer = () => {
               <li><a href="/">Home</a></li>
               <li><Link to="/appointment">Appointment</Link></li>
             </ul>
-
           </div>
 
           <div className="footer-section contact">
@@ -37,16 +34,40 @@ const Footer = () => {
           <div className="footer-section social">
             <h4>Follow Us</h4>
             <div className="social-icons">
-              <a href="https://www.instagram.com/sparkpro.details/" target="_blank" rel="noopener noreferrer" className="social-icon instagram">
+              <a
+                href="https://www.instagram.com/sparkpro.details/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon instagram"
+                aria-label="Instagram"
+              >
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61556978987668" target="_blank" rel="noopener noreferrer" className="social-icon facebook">
+              <a
+                href="https://www.facebook.com/profile.php?id=61556978987668"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon facebook"
+                aria-label="Facebook Page 1"
+              >
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61573928611105" target="_blank" rel="noopener noreferrer" className="social-icon facebook">
+              <a
+                href="https://www.facebook.com/profile.php?id=61573928611105"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon facebook"
+                aria-label="Facebook Page 2"
+              >
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.youtube.com/@Sparkprodetails/shorts" target="_blank" rel="noopener noreferrer" className="social-icon youtube">
+              <a
+                href="https://www.youtube.com/@Sparkprodetails/shorts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon youtube"
+                aria-label="YouTube Shorts"
+              >
                 <i className="fab fa-youtube"></i>
               </a>
             </div>
