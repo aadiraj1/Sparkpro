@@ -20,7 +20,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #ffffff; /* Background color for the body */
+  background-color: #363234; /* Background color for the body */
   color: rgba(255, 255, 255, 0.87); /* Global text color */
 }
 

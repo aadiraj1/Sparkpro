@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./Glasscoating.css";
 import { assets } from '@assets/icon';
+import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet'; // Don't forget to import Helmet
 
 const Glasscoating = () => {
   useEffect(() => {
@@ -10,27 +12,48 @@ const Glasscoating = () => {
 
   return (
     <div className="maincontainer">
-              <div className="car-animation-container">
+      <Helmet>
+        <title>Best Glass Coating Services for Cars in islamabad | Sparkprodetails</title>
+        <meta
+          name="description"
+          content="Enhance your car's paintwork with our advanced glass coating services in Islamabad. Enjoy long-lasting protection, hydrophobic effect, and improved gloss."
+        />
+        <meta
+          name="keywords"
+  content="best glass coating in islamabad, car protection, hydrophobic coating, car detailing, premium glass coating, UV protection, scratch resistance, car care islamabad"
+        />
+        <meta property="og:title" content="Premium Glass Coating Services for Cars | Sparkprodetails" />
+        <meta property="og:description" content="Restore and protect your car with high-performance glass coating. Choose from various coatings for a premium, shiny, and protected finish." />
+        <meta property="og:image" content="https://www.sparkprodetails.com/logo.jpg" />
+        <meta property="og:url" content="https://www.sparkprodetails.com/glass-coating" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Premium Glass Coating Services for Cars | Sparkprodetails" />
+        <meta name="twitter:description" content="Protect your car with glass coating technology. Enhance gloss, resist scratches, and protect against contaminants with our professional services." />
+        <meta name="twitter:image" content="https://www.sparkprodetails.com/logo.jpg" />
+      </Helmet>
+
+      <div className="car-animation-container">
         <img className="car-animation" src={assets.logo_icon} alt="Car Animation" />
       </div>
       
       <h1 className="ppf-heading">Crystal clear. Tough protection. Premium glass coating services</h1>
       
       <p className="glasscoat-intro">
-  Restore the brilliance and protect your car’s paintwork with time-tested, high-performance 
-  <strong> Glass Coating</strong> technology! This durable, transparent layer chemically bonds 
-  to your vehicle’s surface, forming a resilient shield that guards against environmental stressors.
-  <br /><br />
-  <strong>Why choose Glass Coating?</strong> It offers excellent resistance to <strong>oxidation</strong>, 
-  <strong>UV degradation</strong>, and <strong>acid rain</strong>, while minimizing the impact of 
-  <strong> contaminants</strong> like bird droppings, tree sap, and road tar. Its 
-  <strong> hydrophobic effect</strong> causes water to bead and slide off easily, significantly 
-  reducing water spots and making maintenance effortless. 
-  <br /><br />
-  The coating also enhances gloss and color depth, giving your car a rich, mirror-like finish. 
-  It's the smart, affordable choice for daily drivers who want long-lasting protection, 
-  easier cleaning, and that just-polished look — without the higher cost of ceramic coating.
-</p>
+        Restore the brilliance and protect your car’s paintwork with time-tested, high-performance 
+        <strong> Glass Coating</strong> technology! This durable, transparent layer chemically bonds 
+        to your vehicle’s surface, forming a resilient shield that guards against environmental stressors.
+        <br /><br />
+        <strong>Why choose Glass Coating?</strong> It offers excellent resistance to <strong>oxidation</strong>, 
+        <strong>UV degradation</strong>, and <strong>acid rain</strong>, while minimizing the impact of 
+        <strong> contaminants</strong> like bird droppings, tree sap, and road tar. Its 
+        <strong> hydrophobic effect</strong> causes water to bead and slide off easily, significantly 
+        reducing water spots and making maintenance effortless. 
+        <br /><br />
+        The coating also enhances gloss and color depth, giving your car a rich, mirror-like finish. 
+        It's the smart, affordable choice for daily drivers who want long-lasting protection, 
+        easier cleaning, and that just-polished look — without the higher cost of ceramic coating.
+      </p>
 
 
 <h2 className="ppf-subheading">Why Choose Our Glass-Coating?</h2>
@@ -120,7 +143,7 @@ const Glasscoating = () => {
 
       </ul>
       <div className="ppf-button-container">
-  <a href="/appointment" className="book-btn">📅 Book Your Appointment Now</a>
+  <Link to="/appointment" className="book-btn">📅 Book Your Appointment Now</Link>
 </div>
 
       <h2 className="ppf-subheading">Gallery: Our Glass-Coat Work</h2>
@@ -134,7 +157,7 @@ const Glasscoating = () => {
 
       <h2 className="ppf-subheading">"100% Trustworthy, Every Time – Quality You Can Rely On!"</h2>
       <div className="ppf-button-container">
-  <a href="/appointment" className="book-btn">📅 Book Your Appointment Now</a>
+  <Link to="/appointment" className="book-btn">📅 Book Your Appointment Now</Link>
 </div>
     </div>
   );

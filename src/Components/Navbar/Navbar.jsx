@@ -49,6 +49,8 @@ const Navbar = () => {
         <Link className="navbar-brand" to="/" onClick={handleNavLinkClick}>
           <span>SparkPro</span> <span className="SDt">.Details</span>
         </Link>
+        <a className="avz" href="tel:+923105555027">Click here to Call Now</a>
+
 
         <button
           className={`navbar-toggler ${isNavOpen ? "active" : ""}`}
@@ -59,6 +61,7 @@ const Navbar = () => {
           <span></span>
           <span></span>
         </button>
+        
 
         <div className={`navbar-links ${isNavOpen ? "active" : ""}`}>
           <ul className="navbar-nav">

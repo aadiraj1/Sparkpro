@@ -291,3 +291,90 @@
 .navbar-brand .SDt:hover {
     color: white; /* Change color to white on hover */
 }
+
+
+/* Default styles for avz (existing) */
+.avz {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #007bff;
+    background-color: transparent; /* No background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    animation: fadeSlideIn 1s ease forwards, continuousGlow 2s ease-in-out infinite, pulseGlow 2s ease-in-out infinite;
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Slide + Fade In Animation */
+@keyframes fadeSlideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Continuous Glow Animation for Text */
+@keyframes continuousGlow {
+    0% {
+        text-shadow: 0 0 5px #007bff, 0 0 10px #007bff;
+    }
+    50% {
+        text-shadow: 0 0 15px #007bff, 0 0 30px #007bff;
+    }
+    100% {
+        text-shadow: 0 0 5px #007bff, 0 0 10px #007bff;
+    }
+}
+
+/* Pulse Effect for Glow */
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 5px #007bff, 0 0 10px #007bff;
+    }
+    50% {
+        text-shadow: 0 0 20px #007bff, 0 0 40px #007bff;
+    }
+    100% {
+        text-shadow: 0 0 5px #007bff, 0 0 10px #007bff;
+    }
+}
+
+/* Hover Effects */
+.avz:hover {
+    transform: scale(1.05);
+    color: #00b0ff; /* Light blue color on hover */
+    text-shadow: 0 0 20px #00b0ff, 0 0 40px #00b0ff;
+}
+
+/* Responsive adjustments for smaller screens */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .avz {
+        font-size: 18px; /* Slightly smaller font */
+        padding: 8px 16px; /* Reduced padding */
+    }
+}
+
+/* Small devices (max-width: 480px, mobile phones) */
+@media (max-width: 480px) {
+    .avz {
+        font-size: 16px; /* Even smaller font for mobile */
+        padding: 6px 12px; /* Further reduced padding */
+    }
+}
+
+/* Extra small devices (like iPhone SE) */
+@media (max-width: 375px) {
+    .avz {
+        font-size: 14px; /* Small font size for very small screens */
+        padding: 5px 10px; /* Minimal padding for small screens */
+    }
+}

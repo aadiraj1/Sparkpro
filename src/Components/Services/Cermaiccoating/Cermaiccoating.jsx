@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import "./Cermaiccoating.css";
 import { assets } from '@assets/icon';
+import { Link } from "react-router-dom"; 
+import { Helmet } from "react-helmet";
+
 
 const Cermaiccoating = () => {
   useEffect(() => {
@@ -10,6 +13,22 @@ const Cermaiccoating = () => {
 
   return (
     <div className="maincontainer">
+<Helmet>
+  <title>Ceramic Coating Services in Islamabad | Next-Level Car Protection & Shine</title>
+  <meta name="description" content="Get long-lasting, showroom-quality shine with our premium Ceramic Coating services in Islamabad. Protect your car from UV, scratches, and the elements with expert application and top global brands." />
+  <meta name="keywords" content="Ceramic Coating, Car Protection, Paint Protection, Hydrophobic Coating, Car Detailing, UV Protection, Scratch Resistance, Ceramic Pro, System X, Gtechniq, Car Shine, Graphene Coating, Best Ceramic Coating in Islamabad" />
+  <meta property="og:title" content="Ceramic Coating Services in Islamabad | Premium Car Shine & Protection" />
+  <meta property="og:description" content="Discover unbeatable car protection with our professional Ceramic Coating service in Islamabad. Enhanced gloss, hydrophobic finish, and years of durability." />
+  <meta property="og:image" content="https://www.sparkprodetails.com/path-to-featured-image.jpg" />
+  <meta property="og:url" content="https://www.sparkprodetails.com/ceramic-coating" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ceramic Coating Services in Islamabad | Premium Car Shine & Protection" />
+  <meta name="twitter:description" content="Professional Ceramic Coating in Islamabad that offers next-level protection and unbeatable shine for your vehicle." />
+  <meta name="twitter:image" content="https://www.sparkprodetails.com/path-to-featured-image.jpg" />
+</Helmet>
+
+
         <div className="car-animation-container">
   <img className="car-animation" src={assets.logo_icon} alt="Car Animation" />
 </div>
@@ -125,8 +144,9 @@ const Cermaiccoating = () => {
 
       </ul>
       <div className="ppf-button-container">
-  <a href="/appointment" className="book-btn">📅 Book Your Appointment Now</a>
+  <Link to="/appointment" className="book-btn">📅 Book Your Appointment Now</Link>
 </div>
+
 
       <h2 className="ppf-subheading">Gallery: Our Ceramic-Coating Work</h2>
       <div className="ppf-gallery">
@@ -139,7 +159,7 @@ const Cermaiccoating = () => {
 
       <h2 className="ppf-subheading">"100% Trustworthy, Every Time – Quality You Can Rely On!"</h2>
       <div className="ppf-button-container">
-  <a href="/appointment" className="book-btn">📅 Book Your Appointment Now</a>
+  <Link to="/appointment" className="book-btn">📅 Book Your Appointment Now</Link>
 </div>
     </div>
   );
