@@ -11,9 +11,16 @@ const Hero = () => {
   return (
     <>
       <div className="hero-container">
-        <video autoPlay loop muted playsInline className="hero-video">
-          <source src={assets.videoFile} type="video/mp4" />
-        </video>
+            <video autoPlay loop muted playsInline className="hero-video">
+  <source src={assets.videoFile} type="video/mp4" />
+  <track
+    kind="captions"
+    src="blank.vtt"
+    srclang="en"
+    label="No audio"
+    default
+  />
+</video>
         <div className="ppf-hero">
           <h1 className="h1-hero">Our Services</h1>
           <h3 className="h2-hero">
