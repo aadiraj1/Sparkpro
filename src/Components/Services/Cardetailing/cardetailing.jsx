@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import "./cardetailing.css";
 import { assets } from '@assets/icon';
 
@@ -10,38 +11,113 @@ const Cardetailing = () => {
 
   return (
     <div className="maincontainer">
-        <div className="car-animation-container">
-  <img className="car-animation" src={assets.logo_icon} alt="Car Animation" />
-</div>
+      {/* Helmet for SEO and Metadata */}
+      <Helmet>
+        <title>Best Car Detailing, PPF & Ceramic Coating in Islamabad & Rawalpindi | Sparkprodetails</title>
+        <meta
+          name="description"
+          content="Get the best car detailing, paint protection film (PPF), and ceramic coating services in Islamabad & Rawalpindi. Protect and enhance your car with showroom-quality care and expert service."
+        />
+        <meta
+          property="og:title"
+          content="Best Car Detailing, PPF & Ceramic Coating in Islamabad & Rawalpindi | Sparkprodetails"
+        />
+        <meta
+          property="og:description"
+          content="Top-tier car detailing, PPF, and ceramic coating in Islamabad & Rawalpindi. Protect your car’s finish with the best materials and expert care."
+        />
+        <meta property="og:image" content="/logo.jpg" />
+        <meta property="og:url" content="https://www.sparkprodetails.com/" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Best Car Detailing, PPF & Ceramic Coating in Islamabad & Rawalpindi | Sparkprodetails"
+        />
+        <meta
+          name="twitter:description"
+          content="Experience expert car detailing, PPF, and ceramic coating services in Islamabad & Rawalpindi. Enhance your car’s protection and shine today!"
+        />
+        <meta name="twitter:image" content="/logo.jpg" />
+
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.sparkprodetails.com/" />
+      </Helmet>
+
+      {/* Structured Data (JSON-LD) */}
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Spark Pro Details",
+      "url": "https://www.sparkprodetails.com/",
+      "logo": "https://www.sparkprodetails.com/logo.jpg",
+      "image": "https://www.sparkprodetails.com/logo.jpg",
+      "description": "Best Car Detailing, PPF & Ceramic Coating services in Islamabad & Rawalpindi. Get showroom-quality detailing with expert care for your car.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Islamabad & Rawalpindi",
+        "addressRegion": "Islamabad Capital Territory",
+        "addressCountry": "Pakistan"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-310-5555027",  
+        "contactType": "customer service",
+        "areaServed": "PK",
+        "availableLanguage": "en"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61556978987668",
+        "https://www.instagram.com/sparkpro.details/",
+        "https://www.youtube.com/@Sparkprodetails/shorts"
+      ],
+      "serviceType": [
+        "Car Detailing",
+        "Paint Protection Film (PPF)",
+        "Ceramic Coating"
+      ],
+      "priceRange": "$$$"
+    }),
+  }}
+/>
+
+
+      <div className="car-animation-container">
+        <img className="car-animation" src={assets.logo_icon} alt="Car Animation" />
+      </div>
 
       <h1 className="ppf-heading">From Every Angle—Flawless. 360 Detailing, Every Day Shine</h1>
       
       <p className="ppf-intro">
-  At <strong>360 Car Detailing</strong>, we believe a truly flawless vehicle is more than just clean —<br />
-  <strong>it’s meticulously cared for from every angle.</strong><br /><br />
+        At <strong>360 Car Detailing</strong>, we believe a truly flawless vehicle is more than just clean —<br />
+        <strong>it’s meticulously cared for from every angle.</strong><br /><br />
 
-  Our comprehensive <strong>360° Detailing Service</strong> is designed to deliver a <strong>showroom-quality finish</strong> every single day, while offering <strong>next-level protection</strong> for every surface of your car, inside and out.
-  <br /><br />
+        Our comprehensive <strong>360° Detailing Service</strong> is designed to deliver a <strong>showroom-quality finish</strong> every single day, while offering <strong>next-level protection</strong> for every surface of your car, inside and out.
+        <br /><br />
 
-  <strong>This is a full vehicle transformation.</strong><br /><br />
+        <strong>This is a full vehicle transformation.</strong><br /><br />
 
-  Whether you're prepping for a <strong>car show</strong>, <strong>resale</strong>, or just want to drive something that <strong>feels brand new</strong>, our 360 Detailing package guarantees a vehicle that <strong>turns heads—and stays protected</strong>.
-  <br /><br />
+        Whether you're prepping for a <strong>car show</strong>, <strong>resale</strong>, or just want to drive something that <strong>feels brand new</strong>, our 360 Detailing package guarantees a vehicle that <strong>turns heads—and stays protected</strong>.
+        <br /><br />
 
-  Let your car reflect your standards—<strong>flawless, from every angle.</strong>
-</p>
-
+        Let your car reflect your standards—<strong>flawless, from every angle.</strong>
+      </p>
 
       <h2 className="ppf-subheading">Why Choose Our 360 Car Detailing?</h2>
       <ul className="ppf-features">
-      <li>✅ <strong>Gloss Like Glass</strong> – Achieve an ultra-deep, mirror-like finish that lasts for years.</li>
-  <li>✅ <strong>Hydrophobic Protection</strong> – Repels water, mud, and dirt with ease for effortless cleaning.</li>
-  <li>✅ <strong>UV & Chemical Resistance</strong> – Protects paint from sun damage, fading, and harsh contaminants.</li>
-  <li>✅ <strong>Scratch Resistance</strong> – Adds a durable shield against light scratches and swirl marks.</li>
-  <li>✅ <strong>Long-Term Durability</strong> – Unlike wax, ceramic coating provides protection that lasts for years, not weeks.</li>
-  <li>✅ <strong>Low Maintenance Shine</strong> – Spend less time washing and more time showing off that flawless finish.</li>
-
+        <li>✅ <strong>Gloss Like Glass</strong> – Achieve an ultra-deep, mirror-like finish that lasts for years.</li>
+        <li>✅ <strong>Hydrophobic Protection</strong> – Repels water, mud, and dirt with ease for effortless cleaning.</li>
+        <li>✅ <strong>UV & Chemical Resistance</strong> – Protects paint from sun damage, fading, and harsh contaminants.</li>
+        <li>✅ <strong>Scratch Resistance</strong> – Adds a durable shield against light scratches and swirl marks.</li>
+        <li>✅ <strong>Long-Term Durability</strong> – Unlike wax, ceramic coating provides protection that lasts for years, not weeks.</li>
+        <li>✅ <strong>Low Maintenance Shine</strong> – Spend less time washing and more time showing off that flawless finish.</li>
       </ul>
+
+
 
       <h2 className="ppf-subheading">360 Car-Detailing</h2>
       <p>
@@ -172,11 +248,6 @@ const Cardetailing = () => {
 <li>✔️ <strong>Sylvania Headlight Restoration Kit (US)</strong> – DIY kit that restores foggy headlights, improving night visibility.</li>
 <li>✔️ <strong>Autoglym Headlight Restorer (UK)</strong> – Specialized product to restore cloudy headlights and enhance visibility.</li>
 
-
-
-
-
-  
   <li><br /><strong>✨ ADDITIONAL TOUCHES</strong></li>
   
   <li>✅ <strong>Odor Elimination</strong></li>

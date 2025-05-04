@@ -11,6 +11,7 @@ import Dechrome from "./Components/Services/Dechrome/Dechrome";
 import Appointment from "./Components/Appointment/Appointment";
 import Footer from "./Components/Footer/Footer"; 
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import ContactIcons from "./Components/Contact/Contact";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         </Routes>
         {/* Footer is included after all routes so it will show on every page */}
         <Footer />
+        <ContactIcons/>
       </div>
     </Router>
   );

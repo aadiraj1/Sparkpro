@@ -1,10 +1,10 @@
 import React, { useState as S, useRef as R, useEffect } from 'react';
 import emailjs from 'emailjs-com';
+import { Helmet } from 'react-helmet'; // Import Helmet for meta tag management
 import './appointment.css';
 
 const Appointment = () => {
   useEffect(() => {
-    
     window.scrollTo(0, 0);
   }, []);
 
@@ -35,10 +35,10 @@ const Appointment = () => {
 
     emailjs
       .sendForm(
-        'service_p58k9vs',     
-        'template_c2xaixi', 
+        'service_p58k9vs',
+        'template_c2xaixi',
         F.current,
-        'ykQwsYJ1SVpqmb2Fw'  
+        'ykQwsYJ1SVpqmb2Fw'
       )
       .then(
         (r) => {
@@ -68,6 +68,12 @@ const Appointment = () => {
 
   return (
     <div className="appointment-wrapper">
+      {/* Meta description */}
+      <Helmet>
+        <meta name="description" content="Book an appointment for car detailing, ceramic coating, PPF, and more. Get your car services scheduled easily." />
+        <title>Book Your Appointment | Car Detailing Services</title>
+      </Helmet>
+
       <h2 className="form-title">🚗 Book Your Appointment</h2>
 
       {X && (

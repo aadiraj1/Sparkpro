@@ -49,6 +49,7 @@ const Navbar = () => {
         <Link className="navbar-brand" to="/" onClick={handleNavLinkClick}>
           <span>SparkPro</span> <span className="SDt">.Details</span>
         </Link>
+        
 
         <button
           className={`navbar-toggler ${isNavOpen ? "active" : ""}`}
