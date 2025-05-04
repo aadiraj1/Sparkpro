@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import "./index.css"; // Global styles
 import Hero from "./Components/Hero/Hero";
-import PPF from "./Components/Services/PPF/PPF"; // Import the PPF component
+import PPF from "./Components/Services/PPF/ppf"; // Import the PPF component
 import Cermaiccoating from "./Components/Services/Cermaiccoating/Cermaiccoating";
 import Glasscoating from "./Components/Services/Glasscoating/Glasscoating";
 import Cardetailing from "./Components/Services/Cardetailing/Cardetailing";
