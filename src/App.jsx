@@ -6,10 +6,10 @@ import Hero from "./Components/Hero/Hero";
 import PPF from "./Components/Services/PPF/ppf"; // Import the PPF component
 import Cermaiccoating from "./Components/Services/Cermaiccoating/Cermaiccoating";
 import Glasscoating from "./Components/Services/Glasscoating/Glasscoating";
-import Cardetailing from "./Components/Services/Cardetailing/Cardetailing";
-import Dechrome from "./Components/Services/Dechrome/Dechrome";
-import Appointment from "./Components/Appointment/Appointment";
-import Footer from "./Components/Footer/Footer"; 
+import Cardetailing from "./Components/Services/Cardetailing/cardetailing";
+import Dechrome from "./Components/Services/Dechrome/dechrome";
+import Appointment from "./Components/Appointment/appointment";
+import Footer from "./Components/Footer/footer"; 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import ContactIcons from "./Components/Contact/Contact";
 
