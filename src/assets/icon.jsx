@@ -51,14 +51,14 @@ import C17 from './C17.jpeg';
 import C18 from './C18.jpeg';
 
 // G1 to G8
-import G1 from './G1.jpeg';
-import G2 from './G2.jpeg';
-import G3 from './G3.jpeg';
-import G4 from './G4.jpeg';
-import G5 from './G5.jpeg';
-import G6 from './G6.jpeg';
-import G7 from './G7.jpeg';
-import G8 from './G8.jpeg';
+import G1 from './g1.jpeg';
+import G2 from './g2.jpeg';
+import G3 from './g3.jpeg';
+import G4 from './g4.jpeg';
+import G5 from './g5.jpeg';
+import G6 from './g6.jpeg';
+import G7 from './g7.jpeg';
+import G8 from './g8.jpeg';
 
 // D1 to D9
 import d1 from './d1.jpeg';
