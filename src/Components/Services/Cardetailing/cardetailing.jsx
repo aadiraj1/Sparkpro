@@ -13,14 +13,14 @@ const Cardetailing = () => {
     <div className="maincontainer">
       {/* Helmet for SEO and Metadata */}
       <Helmet>
-        <title>Best Car Detailing, PPF & Ceramic Coating in Islamabad & Rawalpindi | Sparkprodetails</title>
+        <title>Best Car Detailing, PPF & Ceramic Coating in Islamabad & Rawalpindi</title>
         <meta
           name="description"
           content="Get the best car detailing, paint protection film (PPF), and ceramic coating services in Islamabad & Rawalpindi. Protect and enhance your car with showroom-quality care and expert service."
         />
         <meta
           property="og:title"
-          content="Best Car Detailing, PPF & Ceramic Coating in Islamabad & Rawalpindi | Sparkprodetails"
+          content="Best car detailing, ppf & ceramic coating in islamabad"
         />
         <meta
           property="og:description"
@@ -33,7 +33,7 @@ const Cardetailing = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Best Car Detailing, PPF & Ceramic Coating in Islamabad & Rawalpindi | Sparkprodetails"
+          content="Best car detailing, ppf & ceramic coating in islamabad"
         />
         <meta
           name="twitter:description"
@@ -56,7 +56,7 @@ const Cardetailing = () => {
       "url": "https://www.sparkprodetails.com/",
       "logo": "https://www.sparkprodetails.com/logo.jpg",
       "image": "https://www.sparkprodetails.com/logo.jpg",
-      "description": "Best Car Detailing, PPF & Ceramic Coating services in Islamabad & Rawalpindi. Get showroom-quality detailing with expert care for your car.",
+      "description": "Best car detailing, PPF & ceramic coating services in islamabad & rawalpindi. Get showroom-quality detailing with expert care for your car.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Islamabad & Rawalpindi",

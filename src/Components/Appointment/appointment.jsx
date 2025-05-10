@@ -71,7 +71,7 @@ const Appointment = () => {
       {/* Meta description */}
       <Helmet>
         <meta name="description" content="Book an appointment for car detailing, ceramic coating, PPF, and more. Get your car services scheduled easily." />
-        <title>Book Your Appointment | Best ppf in islamabad</title>
+        <title>Book Your Appointment | best ppf in islamabad</title>
       </Helmet>
 
       <h2 className="form-title">🚗 Book Your Appointment</h2>
